@@ -19,7 +19,6 @@ find . -delete
 
 # create new repo based off of real starter code
 git clone "$REAL_STARTER_CODE" .
-git remote remove origin
 git remote set-url origin "$STUDENT_REMOTE"
 git push --set-upstream origin master --force
 
