@@ -15,7 +15,7 @@ REAL_STARTER_CODE="https://github.com/comp431/real-hw3.git"
 STUDENT_REMOTE="$(git remote get-url origin)"
 
 # delete all files. More importantly, delete the existing git repo.
-rm -rf * .*
+find . -delete
 
 # create new repo based off of real starter code
 git clone "$REAL_STARTER_CODE" .
